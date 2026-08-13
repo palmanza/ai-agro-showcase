@@ -1,34 +1,24 @@
 # Agro IA Connect
 
-armame un link que la gente ingrese y vea un catálogo de servicios y que cada uno pueda dejar nombre, nombre de empresa, link a la web, que hacen, es para un grupo de whatsapp orientado a la IA y a esto mirá:
+Catálogo comunitario de herramientas, servicios y casos de uso de inteligencia artificial aplicados al agro. Pensado como link fijo para un grupo de WhatsApp de productores, asesores y gente del agro que usa (o quiere empezar a usar) IA y automatización.
 
-Comunidad para productores, asesores y gente del agro que está usando —o quiere empezar a usar— inteligencia artificial y automatización.
+Cualquiera puede sumar una entrada al catálogo con nombre, empresa, sitio web y una descripción de qué hace. Las entradas nuevas quedan en cola hasta que un administrador las aprueba.
 
-La idea es simple: compartir experiencias reales, herramientas, ideas, prompts, agentes, automatizaciones y casos de uso aplicados al agro.
+## Stack
 
-Acá venimos a aprender entre todos, mostrar lo que funciona y también lo que no.
+- [TanStack Start](https://tanstack.com/start) + React + TypeScript
+- [Supabase](https://supabase.com) para datos, auth y RLS
+- Construido y mantenido con [Lovable](https://lovable.dev)
 
-Sin spam. Con ganas de compartir y construir.
+## Desarrollo local
 
-Yo soy paul y soy desarrollador de software y quiero darle al grupo un link así lo dejan fijado en el whatsapp y todos vamos sumandonós al catálogo. Que cada persona que entra pueda editar y luego lo podamos aprobar con el administrador a cada "entrada" y que haya una cola de entradas en el catálogo
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cf2742fa-3466-4b9b-9cab-e79faf094378).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Requiere Node.js y [Bun](https://bun.sh).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+git clone git@github.com:palmanza/ai-agro-showcase.git
+cd ai-agro-showcase
+bun install
+bun run dev
 ```
+
+Variables de entorno necesarias (ver `.env.example` o el proyecto en Supabase): `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, `VITE_SUPABASE_PROJECT_ID`.
